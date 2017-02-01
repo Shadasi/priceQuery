@@ -1,0 +1,37 @@
+JITA PRICES:  
+
+Tritatnium
+Max Unit Price (Buy Order):  4.29
+Median Unit Price (Sell Order):  5.35
+Volume in System:  24386473504
+
+Pyerite
+Max Unit Price (Buy Order):  6.13
+Median Unit Price (Sell Order):  7.50
+Volume in System:  5474232710
+
+Mexallon
+Max Unit Price (Buy Order):  66.73
+Median Unit Price (Sell Order):  77.42
+Volume in System:  505879208
+
+Isogen
+Max Unit Price (Buy Order):  53.30
+Median Unit Price (Sell Order):  67.96
+Volume in System:  544629887
+
+Nocxium
+Max Unit Price (Buy Order):  327.00
+Median Unit Price (Sell Order):  375.00
+Volume in System:  165483734
+
+Zydrine
+Max Unit Price (Buy Order):  1053.12
+Median Unit Price (Sell Order):  1263.88
+Volume in System:  126165327
+
+Megacyte
+Max Unit Price (Buy Order):  1413.00
+Median Unit Price (Sell Order):  1578.42
+Volume in System:  29405652
+
