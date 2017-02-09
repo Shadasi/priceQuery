@@ -46,3 +46,5 @@ while(input_id != 'quit'):
     found_id = find_id(input_id)
     query(found_id, jita_id)
     input_id = input("Enter an item Name:  ")
+
+sys.exit()
