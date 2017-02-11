@@ -5,7 +5,24 @@ import csv
 
 eve_central_base_url = 'http://api.eve-central.com/api/marketstat'
 
-jita_id = 30000142      # Jita's solar system ID
+#jita_id = 30000142      # Jita's solar system ID
+
+def get_system():
+    sys_name = input("Please enter Jita, Hek, Amarr, Rens, Dodixe, or All:  ")
+    if sys_name == 'Hek':
+        return 30002053
+    elif sys_name == 'Amarr':
+        return 30002187
+    elif sys_name == 'Rens':
+        return 30002510
+    elif sys_name == 'Dodixe':
+        return 30002659
+    elif sys_name == 'All':
+        print('This Feature is not Available yet.')
+        sys.exit()
+    else:
+        return 30000142
+
 
 def query(item_id, system_id):
     payload = {
@@ -38,13 +55,18 @@ def find_id(item_name):
         print('Not Found')
         sys.exit()
 
+def main():
 
-input_id = input("Enter an item Name:  ")
+    s_id = get_system()
 
-
-while(input_id != 'quit'):
-    found_id = find_id(input_id)
-    query(found_id, jita_id)
     input_id = input("Enter an item Name:  ")
 
-sys.exit()
+    while(input_id != 'quit'):
+        found_id = find_id(input_id)
+        query(found_id, s_id)
+        input_id = input("Enter an item Name:  ")
+
+    sys.exit()
+
+if __name__ == "__main__":
+    main()
