@@ -24,6 +24,7 @@ def get_system():
         return 30000142
 
 
+
 def query(item_id, system_id):
     payload = {
         'typeid': item_id,
@@ -45,6 +46,8 @@ def query(item_id, system_id):
     print('Item ID:            ', item_id)
     print('Median Sell Price:  ', sell_median)
     print('Sell Volume:        ', sell_vol, '\n')
+    
+
 
 def find_id(item_name):
     with open('typeids.csv', 'r') as f:
@@ -54,6 +57,8 @@ def find_id(item_name):
                 return row[2]
         print('Not Found')
         sys.exit()
+
+
 
 def main():
 
@@ -67,6 +72,8 @@ def main():
         input_id = input("Enter an item Name:  ")
 
     sys.exit()
+
+
 
 if __name__ == "__main__":
     main()
